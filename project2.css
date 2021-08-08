@@ -1,0 +1,182 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display: flex;
+    position: relative;
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    z-index: -1;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin: 10px 0px 10px 20px;
+    /* padding-left: 10px;
+    padding-top: 10px; */
+}
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item{
+    
+    font-size: 2rem;
+}
+.item a{
+    margin: 0px 20px;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+     background-color: black;
+     color: blanchedalmond;
+}
+.item a:hover{
+     background-color: rgb(37, 32, 32);
+     color: blanchedalmond;
+}
+.search{
+    background-color: rgb(33, 33, 124);
+    font-size: 2rem;
+    padding: 5px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.sec{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.sec::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    height: 550px;
+    width: 100%;
+    opacity: .9;
+    z-index: -1;
+    background:url('car1.webp') no-repeat center/cover;
+}
+.sec h1{font-family: 'Big Shoulders Stencil Text', cursive;
+    color: white;
+    font-size: 3.5rem;
+    margin: 0px 0px 40px 0px;
+    padding: 0px 0px;
+}
+.sec p{font-family: 'Dancing Script';
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.service-container{
+    /* background-color: white; */
+    text-align: center;
+}
+#services{
+    display: flex;
+    margin: 30px;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+}
+#services .box{
+    /* width: 30%; */
+    border: 4px solid red;
+    /* border-style: groove; */
+    border-radius: 30px;
+    padding: 30px 10px;
+    padding-bottom: 100px;
+    margin-left: 10px;
+    background-color: rgb(247, 216, 212);
+    font-family: 'Permanent Marker', cursive;
+}
+#services .box img{
+    height: 50%;
+    width: 50%;
+}
+.hpc{
+    font-size: 3.8rem;
+    padding: 12px;
+    margin-bottom: 0px;
+}
+.hsc{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+#client{
+    padding: 0px 0px;
+}
+#client::before{
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    background: url('car4.jpg') no-repeat center center/cover ;
+    z-index: -1;
+}
+#H-client{
+    font-size: 4rem;
+    text-align: center;
+    /* margin: 20px; */
+    padding: 40px 0px 0px 0px;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    /* padding: 40px 0px 0px 0px; */
+}
+.boxx img{ 
+    width: 200px;
+    margin: 0px 20px;
+}
+.contact{
+    margin-top: 60px;
+    font-size: 2rem;
+    /* background-image:url('car5.jpg') ; */
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    height: 660px;
+    width: 100%;
+    background: url('car2.webp') center center/cover;
+    z-index: -1;
+}
+.contact h1{
+    font-size: 4rem;
+    text-align: center; 
+    padding-top: 50px;
+    margin-bottom: 20px;
+    }
+.contact #form1{
+    /* background-color: rgb(238, 138, 39); */
+    width: 40%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.inp{
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+} 
+#message{
+    height: 150px;
+}
